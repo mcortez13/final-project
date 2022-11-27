@@ -1,67 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
 
-/*logo within the nav*/
-/*hover on navbar*/
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
 
-/*grid-template-areas for cards. Cards have margins sauf our team -mobile ver- 100% width*/
+    <!--icon link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-/*background-image css for image from header. margin 0 auto*/
+    <!--css link-->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Three Star Media</title>
+</head>
 
-/*ul nav max width */
-
-<header>
-    <div>
-    
-    </div>
-
-    <div>
+<body>
+    <header>
         <nav>
-            <ul>
+            <ul class="mainnav">
+                
+                <!--logo path-->
+                <li><img src="images/logo.png" alt="three star media logo"></li>
+
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="team">Team</a></li>
+                <li><a href="contact">Contact</a></li>
+
+                <!--search bar with linked icon-->
                 <li>
-
-                </li>
-
-                <li>
-
+                    <form>
+                        <fieldset class="search-bar">
+                            <label for="searchbar"></label>
+                            <input id="searchbar" type="text" name="searchbar" placeholder="Search">
+                            <button class="search-button"><i class="fa fa-search"></i></button>
+                        </fieldset>
+                    </form>
                 </li>
             </ul>
         </nav>
-    </div>
 
-    <div class="banner">
-        <div>/*heading, p, anchor tag*/
+        <div class="banner">
+            <!--background image will be added in css-->
+            
+            <!--created another div to only call out the header-container area but not the background image area-->
+            <div class="header-container">
+                <h1>Welcome to Three Star Media</h1>
+            
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo ab quod, voluptates maxime impedit vel deleniti repellendus similique labore, eveniet nostrum ducimus, amet eos dolore tenetur numquam doloremque quos!</p>
 
+                <button class="connect-button">Connect with us <i class="fa fa-play"></i></button>
+            </div>
         </div>
-    </div>
-
-</header>
-
-<body>
-    <main>
-        About us section /*width 100%, css: flexbox*/
+    </header>
     
-        Our services section */div including all cards > div for each with id, 6 columns, 3 rows (heading, 2 cards and 3 cards) grid-template > clickable buttons > grid area "heading heading heading heading heading heading" ex.*/
 
-        <div>
-            <h1>
 
-            </h1>
-        </div>
+ <!--DONT FORGET TO CONNECT EACH SECTION WITH NAVBAR-->
 
-        <div>
 
-        </div>
+    <main>
+        <section id="about-section">
+            <div class="about-us">
+                <h1>About Us</h1>
 
-        Our vision section /*div with id and class, internal div: heading, p and button.*/
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium, perferendis ullam eveniet provident praesentium, dolorum quis porro cupiditate odit ratione, excepturi maiores. Voluptate laboriosam cumque animi incidunt nobis iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                
+                <p>Voluptatum nobis blanditiis adipisci sunt aspernatur dicta deleniti? Fugit id quaerat et ipsam quia doloribus aliquid ratione tempora aperiam, iusto iste facere.</p>
 
-        Our team section /*div containing everything, flex css  50% each item, id, internal divs for each: 5 divs, 2 columns, 3 rows>
+                <img src="images/about-us.jpg" alt="ping pong table">
+            </div>
+        </section>
 
-        Contact us section /*div with everything, internal divs , margin 0 auto, flex(50% 50%, 100%) or grid(2 columns, 3 rows), 
+        <section id="services-section">
+            <div class="our-services">
+                <h1>Our Services</h1>
+
+                <div class="card1">
+                    <img src="images/digital.jpg">
+
+                    <h1>Digital Transformation</h1>
+
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!.</p>
+
+                    <button class="button1">Digital Plans <i class="fa fa-play"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!--Our vision section div with id and class, internal div: heading, p and button
+        Our team section div containing everything, flex css  50% each item, id, internal divs for each: 5 divs, 2 columns, 3 rows
+        Contact us section div with everything, internal divs , margin 0 auto, flex(50% 50%, 100%) or grid(2 columns, 3 rows),-->
 
     </main>
 
     <footer>
         <div>
-            <div> margin 0 auto</div>
+            <div><p>&COPY; 2022 Maria</p></div>
         </div>
     </footer>
 
