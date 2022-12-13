@@ -25,29 +25,105 @@ time, mark, audio, video {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: white;
 }
 
 .mainnav {
+    margin:auto;
     width:auto;
     background-color:#222;
     border: 13px solid #222;
+    align-items: center;    
+    text-align: center;
+    font-weight: 500;
+    list-style: none;
 }
 
 .logo {
     background-color: #c78c06;
+    text-align:left;
 }
 
 .mainnav a {
     width:100%;
     color:#c78c06;
-    text-decoration: none;
-    margin:auto;
+    text-decoration:none;
+    line-height: 65px;
+    font-size: 17px;
+    list-style: none;
 }
 
+/*when mouse hovers over navbar, different block colour*/
 .mainnav a:hover {
     display:block;
     color:#222;
     background-color: #c78c06;
+}
+
+#searchbar {
+    width: 90%;
+    margin: auto;
+    height: 35px;
+    font-size: 16px;
+}
+
+/*button size added on html style="font-size:21px;"*/
+.search-button {
+    background-color:#222;
+    color: #c78c06;
+    height: 43px;
+    width: 43px;
+    border-color: #c78c06;
+}
+
+
+
+/* Website media queries for screen size of 760px and above*/
+
+@media screen and (min-width:760px) {
+
+    .mainnav {
+        margin:auto;
+        width: 100%;
+        background-color:#222;
+        font-weight: 400;
+        list-style: none;  
+    }
+
+    .logo {
+        background-color:#222;
+        text-align:left;
+        margin:auto;
+        width: 1200px;
+    }
+
+    .mainnav a {
+        width:auto;
+        color:#c78c06;
+        text-decoration:none;
+        list-style: none;
+        display: inline;
+        
+
+    }
     
+    .home, .about, .services, .team, .contact, .search-bar, .search-button {
+        display: inline;
     
+    }
+
+    /*when mouse hovers over navbar, different block colour*/
+    .mainnav a:hover {
+        display:inline;
+        color:#222;
+        background-color: #c78c06;
+        font-weight: 400;
+    }
+
+    #searchbar {
+        width: auto;
+        margin: auto;
+        font-size: 16px;
+    }
+
 }
