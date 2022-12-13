@@ -38,9 +38,9 @@
                 <li class="contact"><a href="#contact-section">Contact</a></li>
 
                 <!--search bar with icon-->
-                <li>
+                <li class="search-bar">
                     <form>
-                        <fieldset class="search-bar">
+                        <fieldset>
                             <label for="searchbar"></label>
                             <input id="searchbar" type="text" name="searchbar" placeholder="Search">
                             <button class="search-button"><i class="fa fa-search" style="font-size: 21px;"></i></button>
@@ -51,14 +51,13 @@
         </nav>
 
         <div class="banner">
-            <!--background image will be added in css-->
-            <!--<img src="images/main-banner.jpg">-->
+            <img src="images/main-banner.jpg" class="main-banner">
             
             <!--created another div to only call out the header-container area but not the background image area-->
             <div class="header-container">
-                <h1>Welcome to Three Star Media</h1>
+                <h1 id="welcome">Welcome to Three Star Media</h1>
             
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo ab quod, voluptates maxime impedit vel deleniti repellendus similique labore, eveniet nostrum ducimus, amet eos dolore tenetur numquam doloremque quos!</p>
+                <p id="para-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto explicabo ab quod, voluptates maxime impedit vel deleniti repellendus similique labore, eveniet nostrum ducimus, amet eos dolore tenetur numquam doloremque quos!</p>
 
                 <button class="connect-button">Connect with us <i class="fa fa-play"></i></button>
             </div>
@@ -69,15 +68,17 @@
     <main>
         <!--All sections divided with <div> and #id linked to navbar-->
         
-            <div id="about-section">
+        <div id="about-section">
+            <img src="images/about-us.jpg" alt="ping pong table" class="about-image">
+
             <div class="about-us">
+                
                 <h1>About Us</h1>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laudantium, perferendis ullam eveniet provident praesentium, dolorum quis porro cupiditate odit ratione, excepturi maiores. Voluptate laboriosam cumque animi incidunt nobis iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 
                 <p>Voluptatum nobis blanditiis adipisci sunt aspernatur dicta deleniti? Fugit id quaerat et ipsam quia doloribus aliquid ratione tempora aperiam, iusto iste facere.</p>
 
-                <img src="images/about-us.jpg" alt="ping pong table">
             </div>
         </div>
 
@@ -88,11 +89,13 @@
                 <div class="card1">
                     <img src="images/digital.jpg">
 
-                    <h2>Digital Transformation</h2>
-
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
-
-                    <button class="button1">Digital Plans <i class="fa fa-play"></i></button>
+                    <div class="card1-content">
+                        <h2>Digital Transformation</h2>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
+                        
+                        <button class="button1">Digital Plans <i class="fa fa-play"></i></button>
+                    </div>
                 </div>
 
                 <br>
@@ -100,11 +103,13 @@
                 <div class="card2">
                     <img src="images/marketing.jpg">
 
-                    <h2>Marketing</h2>
+                    <div class="card2-content">
+                        <h2>Marketing</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
 
-                    <button class="button2">Marketing Plans <i class="fa fa-play"></i></button>
+                        <button class="button2">Marketing Plans <i class="fa fa-play"></i></button>
+                    </div>
                 </div>
 
                 <br>
@@ -112,11 +117,14 @@
                 <div class="card3">
                     <img src="images/video.jpg">
 
-                    <h2>Video Production</h2>
+                    <div class="card3-content">      
+                        <h2>Video Production</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
 
-                    <button class="button3">Video Plans <i class="fa fa-play"></i></button>
+                        <button class="button3">Video Plans <i class="fa fa-play"></i></button>
+                    </div>
+                    
                 </div>
 
                 <br>
@@ -124,11 +132,13 @@
                 <div class="card4">
                     <img src="images/web.jpg">
 
-                    <h2>Web Development</h2>
+                    <div class="card4-content">
+                        <h2>Web Development</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
 
-                    <button class="button4">Web Plans <i class="fa fa-play"></i></button>
+                        <button class="button4">Web Plans <i class="fa fa-play"></i></button>
+                    </div>
                 </div>
 
                 <br>
@@ -136,11 +146,13 @@
                 <div class="card5">
                     <img src="images/print.jpg">
 
-                    <h2>Print</h2>
+                    <div class="card5-content">
+                        <h2>Print</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum animi error nostrum nulla aperiam laudantium id. Quae ab, sequi, deserunt rerum quos cum necessitatibus labore totam distinctio sit, autem a!</p>
 
-                    <button class="button5">Print Plans <i class="fa fa-play"></i></button>
+                        <button class="button5">Print Plans <i class="fa fa-play"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
