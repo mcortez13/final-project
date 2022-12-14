@@ -449,7 +449,7 @@ body {
     margin-left: 20px;
 }
 
-.our-team h1 {
+#team-section h1 {
     font-size: 33pt;
     font-weight: 700;
     margin-left: 20px;
@@ -479,14 +479,14 @@ body {
 }
 
 
-/* Contact section and map*/
+/*Contact section and map*/
 
 .contact-us {
     width: auto;
     height: auto;
 }
 
-.contact-us h1 {
+#contact-section h1 {
     font-size: 33pt;
     font-weight: 700;
     margin-left: 20px;
@@ -611,58 +611,38 @@ footer {
 
 
 
+
 /* Website media queries for screen size of 760px and above*/
 
 @media screen and (min-width:760px) {
 
-    .mainnav {
-        margin:auto;
-        width: 100%;
-        background-color:#222;
-        font-weight: 400;
-        list-style: none;
-        max-height: 143px;
-        display: inline-block;
-    }
-
-    .logo {
-        background-color:#222;
-        text-align:left;
-        margin:auto;
-        width: 1200px;
-    }
-
-    .mainnav li {
-        width:1200px;
-        color:#c78c06;
-        text-decoration:none;
-        list-style: none;
-        display: inline;
-    }
-    
-    .home, .about, .services, .team, .contact {
-        padding-left: 2rem;
-        padding-right: 2rem;
+    nav {
         background-color: #222;
-        width:auto;
-        font-weight: 400;
+    }
+
+    .mainnav {
+        max-width: 1200px;
+        width: auto;
+        background-color:#222;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mainnav img {
+        text-align: left;
+    }
+
+    .mainnav a {
+        font-size: 13pt;
+        margin: 35px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
 
     /*when mouse hovers over navbar, different block colour*/
-    .mainnav li:hover {
-        color:#222;
-        background-color: #c78c06;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        display: inline;
-        width: auto;
-    }
-
-    #searchbar {
-        width: 150px;
-        font-size: 16px;
-    }
 
 
     /*Styling .banner and .header-container*/
@@ -720,7 +700,7 @@ footer {
     }
 
 
-    /*Styling about us section*/
+    /*Styling about us section using float*/
 
     #about-section {
         width:100%;
@@ -752,7 +732,7 @@ footer {
     }
     
 
-    /*Styling services section with grid*/
+    /*Styling services section with grid, 6 columns including title*/
 
     #services-section {
         width:1215px;
@@ -775,7 +755,6 @@ footer {
         "card3 card3 card4 card4 card5 card5"
         "card3 card3 card4 card4 card5 card5"
         "card3 card3 card4 card4 card5 card5"
-        
     }
 
     .our-services h1 {
@@ -812,7 +791,6 @@ footer {
     .our-services .card5:nth-child(6) {
         grid-area: card5;
     }
-
 
 
     /*card1 styling*/
@@ -997,24 +975,141 @@ footer {
 
     /*Styling Our vision section*/
 
+    #vision-section {
+        margin-top: -240px;
+        width: auto;
+    }
+
+    .vision-image {
+        width:100%;
+    }
+
+    .our-vision {
+        margin: auto;
+        max-width: 1200px;
+    }
 
 
+    /*Styling Our team section using flexbox, changed order of cards*/
+
+    .our-team {
+        display:flex;
+        flex-wrap:wrap;
+        margin: auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .our-team .team-img1 {
+        flex-grow:1;
+    }
+
+    .our-team .team-container1 {
+        flex-grow:1;
+    }
+
+    .our-team .team-img2 {
+        flex-grow:1;
+        order:1;
+    }
+
+    .our-team .team-container2 {
+        flex-grow:1;
+    }
+
+    .our-team img {
+        height: 400px;
+        width: 570px;
+    }
+
+    .team-container1, .team-container2 {
+        height: 400px;
+        width: 570px;
+    }
+
+    #team-section h1 {
+        margin-top: 30px;
+        margin: auto;
+        max-width: 1200px;
+        padding-left: 32px;
+    }
 
 
+    /*Styling Contact us section using flexbox to re-arrange order*/
+
+    .contact-us form {
+        display:flex;
+        flex-wrap:wrap;
+        margin: auto;
+        width: 100%;
+        max-width: 1200px;
+        height:900px;
+    }
+
+    #contact-section h1 {
+        margin-top: 30px;
+        margin: auto;
+        max-width: 1200px;
+        padding-left: 32px;
+    }
+
+    .contact-us .send-message {
+        flex-grow:1;
+        flex-basis:40%;
+    }
+
+    .contact-us .hours {
+        flex-grow:1;
+        flex-basis:100%;
+        order:1;
+    }
+
+    .contact-us .location {
+        flex-grow:1;
+        flex-basis:40%;
+    }
+
+    .send-message {
+        height: 400px;
+        width: 500px;
+    }
+
+    .hours {
+        height: 270px;
+        width: 1200px;
+    }
+
+    .location {
+        height: 100px;
+        width: 500px;
+    }
+
+    #fullname, #email {
+        height: 25px;
+        border: 1px solid #222;
+        border-radius:3px;
+    }
+
+    #message {
+        height: 200px;
+        border: 1px solid #222;
+        border-radius:3px;
+    }
+
+    .location iframe {
+        height: 400px;
+    }
 
 
-
-
-
-
-
-    /*Footer*/
+    /*Styling footer*/
 
     .footer {
         background-color: #222;
         width: auto;
+        max-width: 1200px;
         height: 110px;
         color: #c78c06;
+        margin-top: -110px;
     }
 
     .footer a:visited {
@@ -1026,34 +1121,6 @@ footer {
         width:1200px;
         margin-left: 167px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     
 }
